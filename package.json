@@ -1,0 +1,29 @@
+{
+  "name": "pivotaltracker-release-note",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "1.1.0",
+    "concurrently": "^3.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "bootstrap": "^4.0.0",
+    "dotenv": "^5.0.1",
+    "http-proxy": "^1.17.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-axios-middleware": "^4.0.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "node src/server/server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start\""
+  }
+}
